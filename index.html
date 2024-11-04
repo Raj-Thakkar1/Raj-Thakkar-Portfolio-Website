@@ -1,0 +1,50 @@
+{% extends 'base_template.html' %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block body %}
+<div class="home-screen">
+    <div class="video">
+        <video src="static/typing Video.mp4" class="object-fit-contain" loop autoplay height="500px"
+            width="500px"></video>
+    </div>
+    <div class="txt">
+        <div class="welcome-txt">
+            <span>Hi!<span class="container">
+                    <span class="text first-text">I'm a <span class="text sec-text">Freelancer</span></span>
+                </span></span>
+            <br>
+            I am a Brand New Python Developer!
+            <br>
+            I can help you build your brand new
+            website or any application <br>using Python.
+            I also save time by using AI to fasten the creation of <br>
+            your application.
+        </div>
+        <script>
+            const text = document.querySelector(".sec-text");
+            const textLoad = () => {
+                setTimeout(() => {
+                    text.textContent = "Freelancer";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Blogger";
+                }, 4000);
+                setTimeout(() => {
+                    text.textContent = "YouTuber";
+                }, 8000);
+                setTimeout(() => {
+                    text.textContent = "Student";
+                }, 12000);
+                setTimeout(() => {
+                    text.textContent = "PromptEngineer";
+                }, 16000);
+            }
+            textLoad();
+            setInterval(textLoad, 20000);
+        </script>
+
+    </div>
+</div>
+{% endblock body %}
