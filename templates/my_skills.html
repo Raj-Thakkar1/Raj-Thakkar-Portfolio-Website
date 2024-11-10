@@ -1,0 +1,60 @@
+{% extends 'base_template.html' %}
+{% block title %}
+My Skills
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid skills-proficiency-graph">
+    <div class="heading">
+        <h1>My Skills and Each Skill's Proficiency</h1>
+    </div>
+    <div class="skills-container">
+        <div class="skill-bar">
+            <div class="skill-bar-label">Python</div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--fill-width: 95%;"></div>
+            </div>
+            <div class="proeficiency_percent">
+                <h5>95%</h5>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-bar-label">HTML and CSS</div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--fill-width: 95%;"></div>
+            </div>
+            <div class="proeficiency_percent">
+                <h5>95%</h5>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-bar-label">Python Automation</div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--fill-width: 85%;"></div>
+            </div>
+            <div class="proeficiency_percent">
+                <h5>85%</h5>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-bar-label">Python Data Analysis</div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--fill-width: 80%;"></div>
+            </div>
+            <div class="proeficiency_percent">
+                <h5>80%</h5>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-bar-label">Automating Tasks with AI</div>
+            <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--fill-width: 90%;"></div>
+            </div>
+            <div class="proeficiency_percent">
+                <h5>90%</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
